@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e554b0;
+    /* Цвет ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* Закругленные углы для iframe */
+}
+
+.map {
+    width: 600px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+.video {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+    display: block;
+}
