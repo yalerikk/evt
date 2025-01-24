@@ -1,0 +1,134 @@
+:root {
+    --font-family: 'Manrope', sans-serif;
+    --sec-family: 'GrandNationalCondensedItalic', sans-serif;
+    --third-family: 'Appetite', sans-serif; 
+    --c-link: #181825;
+    --c-power: #746192;
+    --c-lapis: #51658F;
+    --bg-platinum: #f1f1f1;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/manrope-regular.ttf') format('truetype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GrandNationalCondensedItalic';
+    src: url('fonts/grand-national-condensed-italic1.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Appetite';
+    src: url('fonts/appetite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-color: var(--bg-platinum);
+    }
+}
+
+body {
+    margin: 20px;
+    background-color: var(--bg-platinum);
+    font-family: var(--font-family);
+}
+
+h1, h2 {
+    color: var(--c-power);
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--c-lapis);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none; /* - маркеры у списка */
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none; /* - подчеркивание */
+    color: var(--c-link);
+}
+
+ul li a:hover {
+    color: var(--c-lapis);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* - двойные границы */
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+    border: 1px solid #ddd; /* Граница ячеек */
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(81, 101, 143, 0.5); /* Чередующиеся цвета строк для чтения */
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--bg-platinum);
+    padding: 10px;
+}
+
+.f-film-description {
+    text-align: left;
+    font-family: var(--font-family);
+}
+.s-film-description {
+    text-align: center;
+    font-family: var(--sec-family);
+}
+.t-film-description {
+    text-align: right;
+    font-family: var(--third-family);
+}
+
+.film-img {
+    /* width: 100%; */
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    border: 3px solid var(--bg-platinum);
+}
+
+.f-film-img, .s-film-img, .t-film-img {
+    margin: 0 50px;
+    background-color: rgba(116, 97, 146, 0.75);
+    padding: 10px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
