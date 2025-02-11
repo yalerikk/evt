@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+
+<body>
+    <header>
+        <h1>Дополнительное задание <a class="link" href="./EVT_lab7.html">Основное задание</a></h1>
+    </header>
+    <main>
+        <div class="all-container">
+            <!-- flex-flow -->
+            <section class="flex-flow block">
+                <h2>flex-flow</h2>
+                <div class="controls-container">
+                    <button class="controller-btn active">row nowrap</button>
+                    <button class="controller-btn">column-reverse</button>
+                    <button class="controller-btn">row-reverse wrap-reverse</button>
+                    <button class="controller-btn">column wrap</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- flex-direction -->
+            <section class="flex-direction block">
+                <h2>flex-direction</h2>
+                <div class="controls-container" id="controls-container">
+                    <button class="controller-btn active">row</button>
+                    <button class="controller-btn">row-reverse</button>
+                    <button class="controller-btn">column</button>
+                    <button class="controller-btn">column-reverse</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- justify-content -->
+            <section class="justify-content block">
+                <h2>justify-content</h2>
+                <div class="controls-container" id="controls-container">
+                    <button class="controller-btn active">flex-start</button>
+                    <button class="controller-btn">flex-end</button>
+                    <button class="controller-btn">center</button>
+                    <button class="controller-btn">space-between</button>
+                    <button class="controller-btn">space-around</button>
+                    <button class="controller-btn">space-evenly</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- order -->
+            <section class="order block">
+                <h2>order</h2>
+                <div class="controls-container">
+                    <button class="controller-btn active">-1</button>
+                    <button class="controller-btn">0</button>
+                    <button class="controller-btn">1</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- flex-basis -->
+            <section class="flex-basis block">
+                <h2>flex-basis</h2>
+                <div class="controls-container">
+                    <button class="controller-btn active">30%</button>
+                    <button class="controller-btn">50%</button>
+                    <button class="controller-btn">70%</button>
+                    <button class="controller-btn">content</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
