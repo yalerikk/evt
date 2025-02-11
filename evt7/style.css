@@ -1,0 +1,140 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(16, 233, 215, 0.178);
+}
+
+/* ----------| Лаба |------------ */
+a {
+  color: #3D89C9;
+  align-self: flex-end;
+}
+
+a:hover {
+  color: #145082;
+}
+
+h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  /* Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели */
+  flex-direction: column; 
+  /* Главная ось располагается вертикально и направлена сверху вниз */
+}
+
+.container {
+  display: flex;
+}
+
+.container.main {
+  flex-direction: row-reverse;
+}
+
+.container.reverse {
+  flex-direction: column-reverse;
+  flex-grow: 1;
+}
+
+.container.table {
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.container.second, .container.third {
+  flex-grow: 1;
+}
+
+/* ----------| Доп |------------ */
+.all-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 120px;
+  padding: 20px;
+  margin: 0px 200px;
+}
+
+.block {
+  justify-content: start;
+}
+
+.controls-container {
+  margin-bottom: 20px;
+}
+
+.controller-btn {
+  color: rgb(52, 52, 52);
+  background-color: transparent;
+  border: 2px solid;
+  border-color: rgb(80, 194, 247);
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.active, .controller-btn:hover {
+  color: white;
+}
+
+.active {
+  background-color: rgb(80, 194, 247);
+}
+
+.controller-btn:hover {
+  cursor: pointer;
+  background-color: rgb(231, 246, 254);
+  color: rgb(52, 52, 52);
+}
+
+.box-container {
+  border: 2px solid #4fc3f7;
+  padding: 5px;
+}
+
+.task-container {
+  display: flex;
+  border: 1px dotted #a6a6a6;
+  gap: 5px;
+  padding: 5px;
+  flex-direction: row;
+  height: 100%;
+  flex-flow: row nowrap;
+}
+
+.box {
+  border: 1px solid gray;
+  padding: .5rem;
+  text-align: center;
+}
+
+.flex-flow .box {
+  width: 40%;
+  height: 40%;
+}
