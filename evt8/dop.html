@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+
+<body>
+    <header>
+        <h1>Дополнительное задание <a class="link" href=".EVT_lab8.html">Основное задание</a></h1>
+    </header>
+    <main>
+        <div class="all-container">
+            <!-- grid-template-columns -->
+            <section class="grid-template-columns block">
+                <h2>grid-template-columns</h2>
+                <!-- buttons -->
+                <div class="controls-container">
+                    <button class="controller-btn active">100px 50px 100px</button>
+                    <button class="controller-btn">50px 1fr 50px</button>
+                    <button class="controller-btn">repeat(3, 75px)</button>
+                </div>
+                <!-- parent -->
+                <div class="box-container">
+                    <div class="task-container">
+                        <!-- child -->
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                        <div class="box five">5</div>
+                        <div class="box six">6</div>
+                        <div class="box seven">7</div>
+                        <div class="box eight">8</div>
+                        <div class="box nine">9</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- grid-template-rows -->
+            <section class="grid-template-rows block">
+                <h2>grid-template-rows</h2>
+                <div class="controls-container" id="controls-container">
+                    <button class="controller-btn active">75px 50px 75px</button>
+                    <button class="controller-btn">30px 1fr 30px</button>
+                    <button class="controller-btn">repeat(3, 60px)</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                        <div class="box five">5</div>
+                        <div class="box six">6</div>
+                        <div class="box seven">7</div>
+                        <div class="box eight">8</div>
+                        <div class="box nine">9</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- grid-template-areas -->
+            <section class="grid-template-areas block">
+                <h2>grid-template-areas</h2>
+                <div class="controls-container" id="controls-container">
+                    <button class="controller-btn active">"a a a" "b c c" "b c c"</button>
+                    <button class="controller-btn">"b b a" "b b c" "b b c"</button>
+                    <button class="controller-btn">". a a" "b b ." ". c c"</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- gap -->
+            <section class="gap block">
+                <h2>gap</h2>
+                <div class="controls-container">
+                    <button class="controller-btn active">3xp</button>
+                    <button class="controller-btn">3px 18px</button>
+                    <button class="controller-btn">5%</button>
+                    <button class="controller-btn">1em</button>
+                    <button class="controller-btn">calc(5% + 5px)</button>
+                    <button class="controller-btn">normal</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                        <div class="box five">5</div>
+                        <div class="box six">6</div>
+                        <div class="box seven">7</div>
+                        <div class="box eight">8</div>
+                        <div class="box nine">9</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- grid-auto-flow -->
+            <section class="grid-auto-flow block">
+                <h2>grid-auto-flow</h2>
+                <div class="controls-container">
+                    <button class="controller-btn active">row</button>
+                    <button class="controller-btn">column</button>
+                    <button class="controller-btn">dense</button>
+                </div>
+                <div class="box-container">
+                    <div class="task-container">
+                        <div class="box first">1</div>
+                        <div class="box second">2</div>
+                        <div class="box third">3</div>
+                        <div class="box fourth">4</div>
+                        <div class="box five">5</div>
+                        <div class="box six">6</div>
+                        <div class="box seven">7</div>
+                        <div class="box eight">8</div>
+                        <div class="box nine">9</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
