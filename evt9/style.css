@@ -1,0 +1,146 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(16, 233, 215, 0.178);
+}
+
+/* ----------| Лаба |------------ */
+a {
+  color: #3D89C9;
+  align-self: flex-end;
+}
+
+a:hover {
+  color: #145082;
+}
+
+h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+/* необходимо поместить ссылку на страницу dop.html справа от заголовка страницы "Адаптив"*/
+
+/* ----------| Grid |------------ */
+.adaptive {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.adaptive article:nth-child(1),
+.adaptive article:nth-child(2),
+.adaptive article:nth-child(4),
+.adaptive article:nth-child(5) {
+  grid-column: span 2;
+}
+
+.adaptive article:nth-child(3) {
+  grid-column: span 4;
+}
+
+/* ----------| Media |------------ */
+@media (max-width: 1400px) {
+  .adaptive {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .adaptive article:nth-child(1),
+  .adaptive article:nth-child(2),
+  .adaptive article:nth-child(3){
+    grid-column: span 2;
+  }
+
+  .adaptive article:nth-child(4),
+  .adaptive article:nth-child(5),
+  .adaptive article:nth-child(6),
+  .adaptive article:nth-child(7),
+  .adaptive article:nth-child(8),
+  .adaptive article:nth-child(9) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .adaptive {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .adaptive article:nth-child(n) {
+    grid-column: span 1;
+  }
+}
+
+/* ----------| Доп |------------ */
+/*
+У вас есть несколько картинок.
+Пока они помещаются на экране они просто выстроены в одну линию,
+как на рисунке 4.
+При уменьшении экрана,
+как только они перестают помещаться на экран в одну линию,
+они начинают налезать друг на друга,
+приблизительно как на рисунке 5. Слева направа сверху вниз
+Чем меньше разрешение – тем больше должно быть наложение картинок. При любом разрешении,
+при наведении на картинку она должна выходить на передний план и немного увеличиваться. (все изменения происходят плавно).
+*/
+
+.gallery {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 15px;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  overflow: hidden; /* Скрывает лишнюю часть изображения */
+  width: auto;
+  min-width: 200px;
+  margin: 5px;
+  transition: transform 0.3s ease; /* Плавный переход для наложения */
+}
+
+.image:hover {
+  z-index: 1; /* Перемещает изображение на передний план */
+}
+
+.image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.image:hover img {
+  transform: scale(1.16); /* Увеличение при наведении */
+}
+
+@media (max-width: 1200px) {
+  .image:nth-child(2) { left: -120px; top: 25px; }
+  .image:nth-child(3) { left: -240px; top: 50px; }
+  .image:nth-child(4) { left: -360px; top: 75px; }
+}
