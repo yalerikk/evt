@@ -12,7 +12,7 @@ sections.forEach((section) => {
 
   buttons.forEach((el) => {
     el.addEventListener("click", ({ target }) => {
-      // Убираем класс active у всех кнопок в данной секции
+      // Удаляем класс active у текущей активной кнопки, чтобы только что нажатая кнопка могла стать активной
       section.querySelector(".active").classList.remove("active");
 
       // Устанавливаем стили в зависимости от секции

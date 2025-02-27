@@ -1,0 +1,112 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    min-width: 100%;
+}
+
+header {
+    grid-row: 1;
+    top: 0;
+}
+
+header, footer {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+header:hover, footer:hover {
+    cursor: default;
+}
+
+.main {
+    grid-row: 2;
+    text-align: center;
+    height: calc(100vh – 50px);
+    margin: 15px;
+}
+
+main article.article p {
+    font-style: normal;
+    padding: 7px;
+}
+
+blockquote.blockquote {
+    font-style: italic;
+}
+
+.article img {
+    min-height: 200px;
+}
+.article:nth-of-type(odd) img {
+    float: left;
+    margin: 0 1em 0 0;
+}
+.article:nth-of-type(even) img {
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.article img+p::first-letter {
+    font-size: 2em;
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.word {
+    position: sticky;
+    top: 53px;
+    padding: 5px 0;
+    width: 70px;
+    height: auto;
+    background: linear-gradient(90deg,
+                rgba(255, 182, 193, 1) 0%,
+                rgba(255, 224, 178, 1) 100%);
+}.word.second {
+    margin: 0 0 0 72px;
+    width: 30px;
+    background: linear-gradient(90deg,
+                rgba(224, 236, 163, 1) 0%,
+                rgba(144, 238, 144, 1) 100%);
+}.word.third {
+    margin: 0 0 0 104px;
+    width: 60px;
+    background: linear-gradient(90deg,
+                rgba(173, 224, 224, 1) 0%,
+                rgba(122, 201, 226, 1) 100%);
+}.word.fourth {
+    margin: 0 0 0 165px;
+    width: 90px;
+    background: linear-gradient(90deg,
+                rgba(173, 216, 230, 1) 0%,
+                rgba(173, 167, 242, 1) 100%);
+}.word.fifth {
+    margin: 0 0 0 257px;
+    width: 80px;
+    background: linear-gradient(90deg,
+                rgba(230, 171, 253, 1) 0%,
+                rgba(255, 182, 193, 1) 100%);
+}
+
+.footer a {
+    margin-left: 7px;
+    &:hover {
+        cursor: default;
+    }
+}
+
+footer {
+    grid-row: 3;
+    bottom: 0;
+}
