@@ -46,7 +46,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/IMG_6771.JPG');    
+    background-image: url('/evt/images/IMG_6771.JPG');    
     background-size: cover;
     background-position: center;
     opacity: 0.3;
